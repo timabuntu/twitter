@@ -1,13 +1,10 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-			OpenSans: ["Open Sans"]
-
-		},
+      OpenSans: ['Open Sans'],
+    },
     extend: {},
   },
   plugins: [],
-}
+};
