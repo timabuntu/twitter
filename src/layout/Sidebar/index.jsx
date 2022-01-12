@@ -34,7 +34,7 @@ const Sidebar = () => {
         <Logo />
 
         <nav>
-          <ul className="">
+          <ul>
             {links.map(link => (
               <li className="flex mt-2">
                 <div className="flex items-center py-1.5 pl-2.5 pr-6 text-lg text-gray-900 duration-200 rounded-full hover:bg-gray-200">
