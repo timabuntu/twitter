@@ -1,37 +1,45 @@
 import Logo from '../../components/Logo';
 import Post from '../../components/Post';
-import User from '../../components/User';
+import UserProffile from '../../components/UserProffile';
+
+import { FaRegListAlt as ILists } from 'react-icons/fa';
+import {
+  MdNotificationsNone as INotifications,
+  MdOutlineMarkunread as IMessages,
+  MdOutlineAutoAwesome as estrelinhasBrilhantes,
+} from 'react-icons/md';
+import {
+  HiOutlineHashtag as IExplore,
+  HiOutlineHome as IHome,
+  HiOutlineDotsCircleHorizontal as IMore,
+  HiOutlineBookmark as IBookmarks,
+  HiOutlineUser as IProfile,
+} from 'react-icons/hi';
 
 const links = [
-  { name: 'Explore' },
-  { name: 'Notifications' },
-  { name: 'Messages' },
-  { name: 'Bookmarks' },
-  { name: 'Lists' },
-  { name: 'Profile' },
-  { name: 'More' },
+  { name: 'Home', icon: <IHome className="w-7 h-7" /> },
+  { name: 'Explore', icon: <IExplore className="w-7 h-7" /> },
+  { name: 'Notifications', icon: <INotifications className="w-7 h-7" /> },
+  { name: 'Messages', icon: <IMessages className="w-7 h-7" /> },
+  { name: 'Bookmarks', icon: <IBookmarks className="w-7 h-7" /> },
+  { name: 'Lists', icon: <ILists className="w-6 h-6 ml-0.5" /> },
+  { name: 'Profile', icon: <IProfile className="w-7 h-7" /> },
+  { name: 'More', icon: <IMore className="w-7 h-7" /> },
 ];
 
 const Sidebar = () => {
   return (
-    <section className="flex flex-col justify-between h-screen px-6 py-2 border-r-2 w-72 border-r-gray-100">
-      <div className="">
+    <section className="flex flex-col justify-between h-screen pb-2 border-r-2 pl-7 w-72 border-r-gray-100">
+      <div className="w-full">
         <Logo />
+
         <nav>
-          <ul className="">
-            <li className="flex mt-2">
-              <div className="flex items-center pl-2 pr-6 text-xl text-gray-900 duration-200 rounded-full hover:bg-gray-200 hover:font-bold">
-                <img className="bg-black w-7 h-7" src="" alt="" />
-                <a href="/" className="py-3 ml-4 font-bold">
-                  Home
-                </a>
-              </div>
-            </li>
+          <ul>
             {links.map(link => (
               <li className="flex mt-2">
-                <div className="flex items-center pl-2 pr-6 text-xl text-gray-900 duration-200 rounded-full hover:bg-gray-200">
-                  <img className="bg-black w-7 h-7" src="" alt="" />
-                  <a href="/" className="py-3 ml-4 ">
+                <div className="flex items-center py-1.5 pl-2.5 pr-6 text-lg text-gray-900 duration-200 rounded-full hover:bg-gray-200">
+                  <div className="w-8 ">{link.icon}</div>
+                  <a href="/" className="py-2 ml-4 ">
                     {link.name}
                   </a>
                 </div>
@@ -39,9 +47,10 @@ const Sidebar = () => {
             ))}
           </ul>
         </nav>
+
         <Post />
       </div>
-      <User />
+      <UserProffile />
     </section>
   );
 };
