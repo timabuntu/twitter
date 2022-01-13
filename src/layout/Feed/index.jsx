@@ -1,4 +1,5 @@
 import { MdOutlineAutoAwesome as ITopTweets } from 'react-icons/md';
+import Tweet from '../../components/Tweet';
 
 const Feed = () => {
   return (
@@ -34,6 +35,7 @@ const Feed = () => {
           </div>
         </div>
       </section>
+      <Tweet />
     </main>
   );
 };
