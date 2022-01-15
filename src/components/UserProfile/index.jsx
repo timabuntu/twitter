@@ -1,10 +1,10 @@
-const User = () => {
+const UserProfile = () => {
   return (
-    <section className="flex justify-between mb-2">
+    <section className="flex justify-between py-3 mb-2 rounded-full hover:bg-gray-200">
       <div className="flex">
         <div className="flex">
           <img
-            className="w-10 h-10 rounded-full"
+            className="w-10 h-10 ml-4 rounded-full"
             src="https://randomuser.me/api/portraits/women/89.jpg"
             alt="user-profile"
           />
@@ -23,4 +23,4 @@ const User = () => {
   );
 };
 
-export default User;
+export default UserProfile;
