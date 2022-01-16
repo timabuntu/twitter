@@ -7,8 +7,8 @@ import Sidebar from '../Sidebar';
 export default function Layout({ children }) {
   return (
     <main className="container flex min-h-screen sm:mx-auto sm:max-w-7xl">
-      <div className="flex ">
-        <div className="sticky top-0 hidden h-full sm:flex">
+      <div className="flex">
+        <div className="flex-1 hidden h-full sm:flex">
           <Sidebar />
         </div>
         <div className="flex flex-col">

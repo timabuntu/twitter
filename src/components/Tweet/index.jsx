@@ -13,7 +13,7 @@ const Tweet = () => {
         <div className="flex-1">
           <div className="w-full mt-3">
             <textarea
-              className="w-full px-2 text-xl placeholder-gray-500 outline-none resize-none sm:px-0"
+              className="w-full px-2 text-xl placeholder-gray-500 outline-none resize-none sm:px-1"
               placeholder="What's happening?"
             />
             <div className="flex items-center justify-between w-full">
