@@ -3,7 +3,7 @@ import PostImg from '../../assets/images/tailwind_3.jpeg';
 const Post = () => {
   return (
     <>
-      <article className="p-4 flex relative border-b *w-[600px] border-gray-100 cursor-pointer hover:bg-gray-100">
+      <article className="relative flex p-4 border-b border-gray-100 cursor-pointer hover:bg-gray-100">
         <img
           className="w-12 h-12 rounded-full"
           src="https://randomuser.me/api/portraits/men/26.jpg"
@@ -65,7 +65,7 @@ const Post = () => {
           </div>
 
           <footer>
-            <ul className="flex items-center justify-between *w-[400px] py-2">
+            <ul className="flex items-center justify-between py-2">
               <li className="flex items-center space-x-1 group">
                 <div className="flex items-center justify-center w-8 h-8 rounded-full group-hover:bg-blue-100">
                   <svg
@@ -77,7 +77,7 @@ const Post = () => {
                     </g>
                   </svg>
                 </div>
-                <span className="text-gray-600 group-hover:text-blue-500">
+                <span className="text-sm text-gray-600 group-hover:text-blue-500">
                   80
                 </span>
               </li>
@@ -93,7 +93,7 @@ const Post = () => {
                     </g>
                   </svg>
                 </div>
-                <span className="text-gray-600 group-hover:text-green-500">
+                <span className="text-sm text-gray-600 group-hover:text-green-500">
                   7
                 </span>
               </li>
@@ -109,7 +109,7 @@ const Post = () => {
                     </g>
                   </svg>
                 </div>
-                <span className="text-gray-600 group-hover:text-pink-500">
+                <span className="text-sm text-gray-600 group-hover:text-pink-500">
                   100
                 </span>
               </li>

@@ -27,7 +27,7 @@ const links = [
 
 const Sidebar = () => {
   return (
-    <section className="flex flex-col justify-between w-full h-screen px-2 pb-2 ">
+    <section className="flex flex-col justify-between w-full h-screen px-2 pb-2">
       <div className="flex flex-col">
         <Logo />
 
