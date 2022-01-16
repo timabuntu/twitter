@@ -1,14 +1,7 @@
-import Feed from './layout/Feed';
-import Sidebar from './layout/Sidebar';
+import Home from './pages/Home';
+
 function App() {
-  return (
-    <main className="min-h-screen ">
-      <div className="flex mx-auto max-w-7xl">
-        <Sidebar />
-        <Feed />
-      </div>
-    </main>
-  );
+  return <Home />;
 }
 
 export default App;
